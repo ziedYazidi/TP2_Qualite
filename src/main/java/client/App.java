@@ -16,9 +16,7 @@ public class App {
         calendar.set(Calendar.DATE, 24);
         Date date = calendar.getTime();
         Compte compte = new Compte(1,date,"Zied yazidi",1000);
-        System.out.println(compte.getOwnerCompte());
-        System.out.println(compte.getNumCompte());
-        System.out.println(compte.getSoldeEnDinars());
+
 
 
     }
