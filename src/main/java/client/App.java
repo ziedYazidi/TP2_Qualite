@@ -18,6 +18,8 @@ public class App {
         Compte compte = new Compte(1,date,"Zied yazidi",1000);
         System.out.println(compte.getOwnerCompte());
         System.out.println(compte.getNumCompte());
+        System.out.println(compte.getSoldeEnDinars());
+
 
     }
 }
