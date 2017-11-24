@@ -2,6 +2,7 @@ package client;
 
 import entities.Compte;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -9,8 +10,14 @@ import java.util.Date;
  */
 public class App {
     public static void main(String[] args){
-        Compte compte = new Compte(1,new Date(10,12,2017),"Zied yazidi",1000);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, 2017);
+        calendar.set(Calendar.MONTH, 11);
+        calendar.set(Calendar.DATE, 24);
+        Date date = calendar.getTime();
+        Compte compte = new Compte(1,date,"Zied yazidi",1000);
         System.out.println(compte.getOwnerCompte());
+        System.out.println(compte.getNumCompte());
 
     }
 }
